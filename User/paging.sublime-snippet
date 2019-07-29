@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+<div class="paginationSet">
+	<ul class="pagination pagination-centered">
+		<li class="i first disabled"><span class="s"><span>처음 <span class="t">목록으로 이동</span></span></span></li>
+		<li class="i prev disabled"><span class="s"><span>이전 <span class="t">목록으로 이동</span></span></span></li>
+		<li><a href=""><span>104</span></a></li>
+		<li><a href=""><span>105</span></a></li>
+		<li><a href=""><span>106</span></a></li>
+		<li class="active"><a href="#"><span>110</span></a></li>
+		<li><a href=""><span>107</span></a></li>
+		<li><a href=""><span>108</span></a></li>
+		<li><a href=""><span>109</span></a></li>
+		<li class="i next"><a href=""><span class="s"><span>다음 <span class="t">목록으로 이동</span></span></span></a></li>
+		<li class="i end"><a href=""><span class="s"><span>끝 <span class="t">목록으로 이동</span></span></span></a></li>
+	</ul>
+</div>
+]]></content>
+<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+<tabTrigger>paging</tabTrigger>
+<!-- Optional: Set a scope to limit where the snippet will trigger -->
+<!-- <scope>source.html</scope> -->
+</snippet>

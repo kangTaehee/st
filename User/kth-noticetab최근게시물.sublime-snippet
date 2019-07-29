@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+.noticeTab>div.set>(h2>a)+(ul>li>a${1:})+(a.more>{더보기})
+.noticeTab>div.set>((h2>a)+(ul>li*${2:5}>a>(span.t+span.date{2016-01-01})))+(a.more>{더보기})
+<style>
+.noticeTab{}
+.noticeTab .set{}
+.noticeTab .set h2{}
+.noticeTab .set h2 a{}
+.noticeTab .set ul{}
+.noticeTab .set ul li{}
+.noticeTab .set ul li a{}
+.noticeTab .set ul li a .t{}
+.noticeTab .set ul li a .date{}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	var tab_notice = \$('.noticeTab .set h2>a')
+	\$(tab_notice).bind('click focus' , function(){
+		// imgOff(\$(tab_notice))
+		// imgOn(\$(this))
+		\$(this).parent().parent().addClass("on").siblings().removeClass("on");
+		return false;
+		event.preventDefault();
+	}).eq(0).trigger('click')
+</script>
+<style>
+.noticeTab{position:relative;}
+.noticeTab .set{float:left;}
+.noticeTab .set h2{height:20px;margin-right:20px;}
+.noticeTab .set h2 a{font-size:18px;}
+.noticeTab .set ul{position:absolute;left:0;top:20px;display:none;}
+.noticeTab .set ul li{}
+.noticeTab .set ul li a{}
+.noticeTab .set ul li a .t{}
+.noticeTab .set ul li a .date{}
+.noticeTab .set a.more{position:absolute;top:20px;right:0;display:none;}
+.noticeTab .set.on a.more,
+.noticeTab .set.on ul{display:block;}
+</style>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>noticetab</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

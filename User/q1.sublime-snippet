@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+background:${1:} url(/static/portal/img/sub/${2:}.png) ${3:center} ${3:0} no-repeat;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>q1</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

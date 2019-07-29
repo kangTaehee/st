@@ -1,0 +1,40 @@
+[
+	{
+		"args":
+		{
+			"characters": "img"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args":
+		{
+			"characters": "/static/img/nph/"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"characters": ".png"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"by": "words",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	}
+]

@@ -1,0 +1,477 @@
+[
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "span"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "strong"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": ".tit"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "auto_indent_tag"
+	},
+	{
+		"args": null,
+		"command": "paste_and_indent"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "p.bu"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"characters": "\n.i"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args":
+		{
+			"characters": "img"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args":
+		{
+			"characters": "/static/"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "portal/im"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "g/sub/"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "200"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "253-"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "1.jpg"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"by": "pages",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "p.s"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "li"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "auto_indent_tag"
+	},
+	{
+		"args":
+		{
+			"characters": "div"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "auto_indent_tag"
+	},
+	{
+		"args":
+		{
+			"characters": "i"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"characters": "\n"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "paste_and_indent"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	}
+]

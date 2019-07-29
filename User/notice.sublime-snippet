@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<h2><a href="#">${1:공지사항}</a></h2>
+<div>
+	<ul>
+		<li><a href="#"><span class="txt">최근게시물 리스트</span><span class="date">2012-04-05</span></a></li>
+		<li class="more"><a href="#">${1:공지사항} 더보기</a></li>
+	</ul>
+</div>
+]]></content>
+<tabTrigger>notice</tabTrigger>
+</snippet>

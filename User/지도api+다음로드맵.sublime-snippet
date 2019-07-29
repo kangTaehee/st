@@ -1,0 +1,75 @@
+<snippet>
+  <content><![CDATA[
+<div id="mapDaum1" class="mapView"></div> <!-- 지도표시 -->
+<div id="mapDaumRoad1"  class="mapView"></div><!-- 로드맵 표시 -->
+
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=b0122acc49aa3f0512cc7b96329d3cb5&libraries=services"></script>
+<script>
+var mapContainer = document.getElementById('mapDaum1'), // 지도를 표시할 div 
+    mapOption = {
+        center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+var map = new daum.maps.Map(mapContainer, mapOption); 
+
+// 주소-좌표 변환 객체를 생성합니다
+var geocoder = new daum.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addr2coord('서울 동작구 상도로30길 40 상도2차 두산위브트레지움아파트커뮤니티지원실 2층', function(status, result) {
+
+    // 정상적으로 검색이 완료됐으면 
+     if (status === daum.maps.services.Status.OK) {
+
+        var coords = new daum.maps.LatLng(result.addr[0].lat, result.addr[0].lng);
+
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        var marker = new daum.maps.Marker({
+            map: map,
+            position: coords
+        });
+
+        // 인포윈도우로 장소에 대한 설명을 표시합니다
+        var infowindow = new daum.maps.InfoWindow({
+            content: '<div style="width:150px;text-align:center;padding:6px 0;"></div>'
+        });
+        // infowindow.open(map, marker);
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        console.log(coords)
+        map.setCenter(coords);
+
+        // // 
+        // var rvContainer = document.getElementById('mapDaumRoad1'); // 로드뷰를 표시할 div
+        // var rv = new daum.maps.Roadview(rvContainer); // 로드뷰 객체 생성
+        // var rc = new daum.maps.RoadviewClient(); // 좌표를 통한 로드뷰의 panoid를 추출하기 위한 로드뷰 help객체 생성
+        // var rvPosition = new daum.maps.LatLng(coords);
+
+        // rc.getNearestPanoId(rvPosition, 50, function(panoid) {
+        //     rv.setPanoId(panoid, rvPosition);//좌표에 근접한 panoId를 통해 로드뷰를 실행합니다.
+        //     rv.setViewpoint({ pan: 193.89769224010072, tilt: -3.1995186923686294, zoom: -3});
+        // });
+// 
+        var roadviewContainer = document.getElementById('mapDaumRoad1'); //로드뷰를 표시할 div
+        var roadview = new daum.maps.Roadview(roadviewContainer); //로드뷰 객체
+        var roadviewClient = new daum.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+
+        var position = new daum.maps.LatLng(coords.hb,coords.gb);
+
+        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+        roadviewClient.getNearestPanoId(position, 50, function(panoId) {
+            console.log(panoId, position)
+            roadview.setPanoId(panoId, position); //panoId와 중심좌표를 통해 로드뷰 실행
+            roadview.setViewpoint({ pan: 90.89769224010072, tilt: -3.1995186923686294, zoom: -3});
+        });
+    } 
+});    
+</script>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

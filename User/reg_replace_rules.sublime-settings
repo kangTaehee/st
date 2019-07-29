@@ -1,0 +1,63 @@
+{
+	"format": "3.0",
+	"replacements":
+	{
+		"deleteSpace":
+		{
+			"find": "[ \\t\\n]+$",
+			"greedy": true,
+			"replace": ""
+		},
+		"html5_remove_deprecated_type_attr":
+		{
+			"find": "(?i)(<(style|script)[^>]*)\\stype=(\"|')text/(css|javascript)(\"|')([^>]*>)",
+			"greedy": true,
+			"replace": "\\1\\6"
+		},
+		"non_ascii_chars":
+		{
+			"find": "[[:^ascii:]]+"
+		},
+		"remove_comments":
+		{
+			"find": "([^\\n\\r]+)",
+			"greedy": true,
+			"replace": "",
+			"scope": "comment"
+		},
+		"remove_csscomments":
+		{
+			"find": "/\\*[\\s\\S]+?\\*/",
+			"greedy": true,
+			"replace": "",
+			"scope": "comment"
+		},
+		"remove_html_comments":
+		{
+			"find": "<!--[\\s\\S]+?-->",
+			"greedy": true,
+			"replace": "",
+			"scope_filter":
+			[
+				"!comment"
+			]
+		},
+		"remove_json_dangling_commas":
+		{
+			"find": ",([\\r\\n\\s]*)(\\]|\\})",
+			"greedy": true,
+			"replace": "\\1\\2",
+			"scope_filter":
+			[
+				"-string",
+				"-comment"
+			]
+		},
+		"remove_trailing_spaces":
+		{
+			"find": "[ \\t]+$",
+			"greedy": true,
+			"replace": ""
+		}
+	}
+}

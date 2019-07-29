@@ -1,0 +1,162 @@
+[
+	{
+		"args": null,
+		"command": "paste_and_indent"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "right_delete"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "right_delete"
+	},
+	{
+		"args": null,
+		"command": "right_delete"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"characters": "\n"
+		},
+		"command": "insert"
+	}
+]

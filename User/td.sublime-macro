@@ -1,0 +1,67 @@
+[
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "td"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"action": "expand_abbreviation"
+		},
+		"command": "run_emmet_action"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	},
+	{
+		"args":
+		{
+			"extend": false,
+			"to": "bol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args": null,
+		"command": "single_selection"
+	},
+	{
+		"args":
+		{
+			"characters": "tr"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "auto_indent_tag"
+	},
+	{
+		"args": null,
+		"command": "paste_and_indent"
+	}
+]

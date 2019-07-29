@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div id="map" class="daummap" data-location="${1:}" style="width:100%;height:350px;"></div>
+<dl>
+	<dt class="i ico_phone">주소 및 전화번호</dt>
+	<dd>
+		<ul class="list">
+			${2:}
+		</ul>
+	</dd>
+</dl>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

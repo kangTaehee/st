@@ -1,0 +1,68 @@
+{
+	"snippets": {
+		// "html": {
+		//  "abbreviations": {
+		//    "example": "<div class='example' title='Custom element example'>"
+		//  }
+		// }
+			"html": {
+				"abbreviations": {
+					"bb": "<button type='button'></button>",
+					"sr":"<span class='sr-only'></span>",
+					"ie":"<img src=\"/static/ezpay/img/sub/|.png\" alt=\"\"/>",
+				}
+			},
+			"css":{
+				"abbreviations": {
+					"incc": "@include clearfix();",
+					"sm": "@include breakpoint(\\$sm){|}",
+					"sm2": "@include breakpoint(max-width 767px){|}",
+					"md": "@include breakpoint(\\$md){|}",
+					"lg": "@include breakpoint(\\$lg){|}",
+					"xl": "@include breakpoint(\\$xl){|}",
+					"tov" : "text-overflow:ellipsis;\noverflow:hidden;\nwhite-space:nowrap;word-wrap:normal;"
+					// ,"Noto-Light":"font-family:'Noto-Light';"
+					// ,"Noto-Regular":"font-family:'Noto-Regular';"
+					// ,"Noto-Medium":"font-family:'Noto-Medium';"
+					// ,"Noto-Bold":"font-family:'Noto-Bold';"
+					// ,"Noto-Black":"font-family:'Noto-Black';"
+					,"Nanum Square":"font-family:'Nanum Square';"
+					,"fx":"display: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;"
+					,"ffa":"font-family:'FontAwesome';"
+					,"ffl":"font-family:'LineAwesome';"
+				}
+			},
+			"scss":{
+				"abbreviations": {
+					"sm": "@include breakpoint(\\$sm){|}",
+					"sm2": "@include breakpoint(max-width 767px){|}",
+					"md": "@include breakpoint(\\$md){|}",
+					"lg": "@include breakpoint(\\$lg){|}",
+					"xl": "@include breakpoint(\\$xl){|}",
+					"tov" : "text-overflow:ellipsis;\noverflow:hidden;\nwhite-space:nowrap;"
+					// ,"Noto-Light":"font-family:'Noto-Light';"
+					// ,"Noto-Regular":"font-family:'Noto-Regular';"
+					// ,"Noto-Medium":"font-family:'Noto-Medium';"
+					// ,"Noto-Bold":"font-family:'Noto-Bold';"
+					// ,"Noto-Black":"font-family:'Noto-Black';"
+					,"notosans":"font-family:'Noto Sans';"
+					,"notomedium":"font-family:'Noto Sans';font-weight: 500;"
+					,"notoRegular":"font-family:'Noto Sans';font-weight: 400;"
+					,"notoLight":"font-family:'Noto Sans';font-weight: 300;"
+					,"notoBold":"font-family:'Noto Sans';font-weight: 700;"
+
+
+					,"Nanum Square":"font-family:'Nanum Square';"
+					,"fx":"display: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;"
+					,"ffa":"font-family:'FontAwesome';"
+					,"ffl":"font-family:'LineAwesome';"
+				}
+			}
+	},
+	"preferences": {
+		// "css.valueSeparator": ": ",
+		// "css.propertyEnd": ";"
+		"css.valueSeparator": ":",
+		"css.propertyEnd": ";"
+	}
+}

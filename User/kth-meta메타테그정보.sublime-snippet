@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+<meta name="Author" content="NOLS">
+Author:제작자의 이름이 NOLS라는 뜻
+<meta name="Generator" content="Microsoft FrontPage 4.0">
+페이지를 프론트 페이지로 제작
+<meta name="Copyright" content="2003 RANGS">
+저작권에 관한 정보
+<meta name="Keywords" content="html,tag,mata,메타,태그">
+검색엔진에서 검색되는 키워드
+<meta name="Description" content="META 태그에 관한 정보">
+페이지에 대한 정보
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+문자 인코딩
+<meta http-equiv="Refresh" content="60">
+60초 마다 새로고침
+<meta http-equiv="Refresh" ccontent="5;url=주소">
+주소로 5초후 이동
+<meta http-equiv="Pragma" content="no-cache">
+캐쉬가 되지 않게
+<meta http-equiv="Expires" content="Mon, 08 Sep 2003 10:10:10 GMT">">
+캐쉬 만료(파기)일
+<meta http-equiv="Page-Enter" content="revealtrans(duration=1,transition=12)">
+페이지 들어갈때 트랜지션 효과(장면 전환 효과)
+<meta http-equiv="Page-Exit" content="revealtrans(duration=1,transition=12)">
+페이지 나갈때 트랜지션 효과(장면 전환 효과)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>metas</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

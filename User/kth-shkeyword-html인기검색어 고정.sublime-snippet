@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+<!--
+상태값 
+클래스	텍스트
+normal	순위 변동없음
+down	순위 하락
+new		순위 급상승
+up 		순위 상승
+-->
+<div class="${1}">
+<div class="shKeywordRank">
+	<h1>인기검색어</h1>
+	<div class="area">
+		<ol>
+		<li class="n1">
+			<a href="">
+			<span class="num"><span>1</span></span>
+			<span class="txt">고소장</span>
+			<span class="arr up"><span class="status">순위 상승</span></span>
+			</a>
+		</li>
+		<li class="n2"><a href=""><span class="num"><span>2</span></span><span class="txt">운전면허</span><span class="arr up"><span class="status">상승</span></span></a></li>
+		<li class="n3"><a href=""><span class="num"><span>3</span></span><span class="txt">가정폭력</span><span class="arr up"><span class="status">상승</span></span></a></li>
+		<li class="n4"><a href=""><span class="num"><span>4</span></span><span class="txt">신고</span><span class="arr up"><span class="status">상승</span></span></a></li>
+		<li class="n5"><a href=""><span class="num"><span>5</span></span><span class="txt">교육포털</span><span class="arr new"><span class="status">new</span></span></a></li>
+		<li class="n6"><a href=""><span class="num"><span>6</span></span><span class="txt">운전경력증명서</span><span class="arr up"><span class="status">상승</span></span></a></li>
+		<li class="n7"><a href=""><span class="num"><span>7</span></span><span class="txt">고소장양식다운로드</span><span class="arr down"><span class="status">하락</span></span></a></li>
+		<li class="n8"><a href=""><span class="num"><span>8</span></span><span class="txt">신원진술서</span><span class="arr down"><span class="status">하락</span></span></a></li>
+		<li class="n9"><a href=""><span class="num"><span>9</span></span><span class="txt">성범죄</span><span class="arr down"><span class="status">하락</span></span></a></li>
+		<li class="n10"><a href=""><span class="num"><span>10</span></span><span class="txt">교통사고</span><span class="arr up"><span class="status">상승</span></span></a></li>
+		</ol>
+	</div>
+</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>shkeywordrank</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>.html,.HTML,</scope>
+</snippet>

@@ -1,0 +1,153 @@
+<snippet>
+	<content><![CDATA[
+<div class="reg">
+	<dl>
+		<dt>신청자</dt>
+		<dd></dd>
+	</dl>
+	<dl>
+		<dt>
+		연락처 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd>
+			<div class="telSet">
+				<select name="ntcrMobile1" title="연락처 앞 자리" >
+					<option value="" selected>선택</option>
+					<option value="010" >010</option>
+					<option value="011" >011</option>
+					<option value="016" >016</option>
+					<option value="017" >017</option>
+					<option value="018" >018</option>
+					<option value="019" >019</option>
+					<option value="02"  >02</option>
+					<option value="070" >070</option>
+					<option value="051" >051</option>
+					<option value="053" >053</option>
+					<option value="032" >032</option>
+					<option value="062" >062</option>
+					<option value="042" >042</option>
+					<option value="052" >052</option>
+					<option value="044" >044</option>
+					<option value="031" >031</option>
+					<option value="033" >033</option>
+					<option value="043" >043</option>
+					<option value="041" >041</option>
+					<option value="063" >063</option>
+					<option value="061" >061</option>
+					<option value="054" >054</option>
+					<option value="055" >055</option>
+					<option value="064" >064</option>
+				</select>
+				-
+				<input type="text" name="ntcrMobile2" class="tel" title="연락처 중간 3~4자리" maxlength="4">
+				-
+				<input type="text" name="ntcrMobile3" class="tel" title="연락처 끝 4자리" maxlength="4">
+			</div>
+			<p class="help"> ※ 연락 가능한 전화번호(휴대전화)를 입력해 주세요</p>
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+		이메일 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd>
+			<div class="emailSet">
+				<input name="ntcrEmail1" id="ntcrEmail1" type="text" title="이메일 아이디" value="" class="emailId">
+				<span>@</span>
+				<input name="ntcrEmail2" id="ntcrEmail2" type="text" title="이메일 주소" value="" readonly="readonly" class="emailAddr emailDomainForm">
+				<label for="sr_email_more" class="hidden">이메일 도메인 선택</label>
+				<select id="sr_email_more" name="" class="input_select select_email_js" title="직접입력 선택시 자동활성화&amp;포커스 이동">
+					<option selected>메일주소선택</option>
+					<option value   ="gmail.com">gmail.com</option>
+					<option value   ="naver.com">naver.com</option>
+					<option value   ="hanmail.net">hanmail.net</option>
+					<option value   ="daum.net">daum.net</option>
+					<option value   ="hotmail.com">hotmail.com</option>
+					<option value   ="nate.com">nate.com</option>
+					<option value   ="yahoo.co.kr">yahoo.co.kr</option>
+					<option value   ="emaildomain_false">직접입력</option>
+				</select>
+				<script>
+				jQuery(function(){
+					jQuery('select.select_email_js').change(function() {
+						if (jQuery(this).val()=='emaildomain_false') {
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val('');
+							jQuery('.emailDomainForm').attr('readonly',false).focus();
+						}else{
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val('');
+							jQuery('.emailDomainForm:text[name=ntcrEmail2]').val(jQuery(this).val());
+							jQuery('.emailDomainForm').attr('readonly',true)
+						}
+					});
+				});
+				</script>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt>주소</dt>
+		<dd>
+			<div class="postSet">
+				<span>
+				<input type="text" name="" value="" class="post" title="우편번호">
+				<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+				</span>
+				<span><input type="text" name="" value="" class="w100p" title="주소"></span>
+				<span><input type="text" name="" value="" class="w100p" title="상세주소"></span>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+		공개여부 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd>
+			<label><input type="radio" name="">공개</label>
+			<label><input type="radio" name="">비공개</label>
+		</dd>
+	</dl>
+	<dl>
+		<dt>
+		사업명 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd><input type="text" class="w100p" title="사업명" name=""></dd>
+	</dl>
+	<dl>
+		<dt>
+		사업위치 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd><input type="text" class="w100p" title="사업위치" name=""></dd>
+	</dl>
+	<dl>
+		<dt>사업기간</dt>
+		<dd><input type="date" class="w100p" title="사업기간" name=""></dd>
+	</dl>
+	<dl>
+		<dt>소요사업비</dt>
+		<dd><input type="text" title="소요사업비" name=""> 천원</dd>
+	</dl>
+	<dl>
+		<dt>
+		제안취지 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd><textarea title="제안취지" class="characterLen" data-lensize="800" cols="100" rows="8" placeholder="한글800자, 영문 1,600자 이하로 입력하셔야 합니다."></textarea></dd>
+	</dl>
+	<dl>
+		<dt>
+		사업내용<span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd><textarea title="사업내용" class="characterLen" data-lensize="800" cols="100" rows="8" placeholder="한글800자, 영문 1,600자 이하로 입력하셔야 합니다."></textarea></dd>
+	</dl>
+	<dl>
+		<dt>
+		사업효과 <span class="req"><span>필수입력</span></span>
+		</dt>
+		<dd><textarea title="사업효과" class="characterLen" data-lensize="800" cols="100" rows="8" placeholder="한글800자, 영문 1,600자 이하로 입력하셔야 합니다."></textarea></dd>
+	</dl>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>d1</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

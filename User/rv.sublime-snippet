@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+//공통 이미지 변경
+function imgOn(item){
+	var image = item.find("img");
+	var imgsrc = \$(image).attr("src");
+	if (\$(image).length)
+	{
+	var on = imgsrc.replace(/_off.gif/,"_on.gif");
+	\$(image).attr("src",on);
+	}
+}
+function imgOff(item){
+	var image = item.find("img");
+	for(var i=0;i<image.length;i++){
+		var imgsrc = \$(image[i]).attr("src");
+		var off = imgsrc.replace(/_on.gif/,"_off.gif");
+		\$(image[i]).attr("src",off);
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>rv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

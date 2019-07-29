@@ -1,0 +1,98 @@
+<snippet>
+<content><![CDATA[
+<style>
+${1:*{-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;margin: 0;\}
+body{font-size: 12px;\}
+.question-search {
+	position: relative;
+	margin-top: 15px;
+	padding: 20px 14px;
+	text-align: center;
+	border: 1px solid #d5d5d5;
+	background-color: #f9f9f9; \}
+.question-search select,
+.question-search input[type=text]{
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #d5d5d5;
+\}
+.question-search select {min-width:120px;\}
+.question-search .inputSearch{padding-left: 5px;\}
+.question-search input[type=submit]{
+	display: inline-block;
+	height: 30px;
+	padding: 0 24px;
+	line-height: 30px;
+	color: #fff;
+	border: 0px;
+	background: #707580;
+\}}
+/*FAQ*/
+#faqList {position:relative; margin:30px 0 0; border-top:3px solid #0552a9; border-bottom:1px solid #707580;}
+#faqList dt,
+#faqList dd {position:relative;padding:10px 10px 12px 35px;border-bottom:1px solid #d6d6d6;}
+#faqList dt {line-height:37px;padding-top: 0;padding-bottom: 0;}
+#faqList dt button {display:block;line-height:18px;background-color: transparent;border: 0;padding:10px 0;width: 100%;text-align: left;}
+#faqList dd {display:none; background:#f8f8f8;}
+#faqList .qnaImg {position:absolute; left:0px; top:7px;}
+#faqList .qnaImg img {width:24px;}
+#faqList #no-data {width:100%; text-align:center; padding-left:0; background-image:none; font-weight:bold;}
+</style>
+${2:<form name="formSearch" action="">
+	<fieldset>
+		<legend>질문검색</legend>
+		<div class="question-search">
+			<select id="searchType" name="searchType" title="검색 구분">
+				<option value="">제목</option>
+				<option value="">내용</option>
+			</select>
+			<input name="searchValue" id="searchValue" value="" size="30" class="inputSearch" title="검색어" type="text">
+			<input value="검색" type="submit">
+		</div>
+	</fieldset>
+</form>}
+<dl id="faqList" class="callFaq">
+	<dd id="no-data">검색 결과가 없습니다.</dd>
+	<dt class="on open">
+		<button type="button" title="답변 닫기">
+			<span class="qnaImg">
+				<img alt="Q" title="질문" src="">
+			</span>
+			<span>
+				자주하는 질문 베스트 1
+			</span>
+		</button>
+	</dt>
+	<dd style="border-bottom: 0px none; display: block;">
+		<span class="qnaImg">
+			<img alt="A" title="답변" src="">
+		</span>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tenetur explicabo sequi pariatur, perferendis voluptates suscipit odit ipsa dicta perspiciatis, totam quasi autem dolorem. Sed earum dolore quasi quisquam sit.
+	</dd>
+	dt>button[type=button title='답변 닫기']>(span.qnaImg>img[alt=Q title=질문])+span${3:}
+	dd>span.qnaImg>img[alt=A title=답변]${4:}
+</dl>
+<!-- faqList -->
+<script>
+jQuery(function(\$){
+	var article = \$('.callFaq dt>button');
+	article.each(function(index, el) {
+		\$(this).click(function(event) {
+			if (\$(this).parent().hasClass('open')) {
+				\$(this).parent().removeClass('open').next().hide();
+				\$(this).attr('title','답변 열기')
+			}else{
+				\$(this).parent().addClass('open').next().show();
+				\$(this).attr('title','답변 닫기')
+			}
+		});
+	});
+});
+</script>
+]]></content>
+<tabTrigger>faq</tabTrigger>
+<!-- <scope>souce.html</scope> -->
+</snippet>

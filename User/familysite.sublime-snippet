@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$('.familysite button').click(function(event) {
+	if (\$(this).parent().find('select option:selected').val()!='') {
+		window.open(\$(this).parent().find('select option:selected').val(),'_blank');
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>familysite</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

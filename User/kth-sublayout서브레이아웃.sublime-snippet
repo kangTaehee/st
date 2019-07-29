@@ -1,0 +1,81 @@
+<snippet>
+	<content><![CDATA[
+<div class="skip">
+	<a href="#content">본문내용 바로가기</a>
+	<a href="#gnb">주메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<header id="header">
+		<p class="logo">${1:로고}</p>
+		<ul class="global">
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">회원가입</a></li>
+			<li><a href="#">사이트맵</a></li>
+		</ul>
+		<nav id="gnb">
+			<ul>
+				<li><a href="#">메뉴리스트</a></li>
+				<li><a href="#">메뉴리스트</a></li>
+				<li><a href="#">메뉴리스트</a></li>
+				<li><a href="#">메뉴리스트</a></li>
+			</ul>
+		</nav>
+		<div class="spot"> spot or visual </div>
+	</header>
+	<!-- //header -->
+	<!-- Container -->
+	<div id="container">
+		<nav class="lnb">
+			<h1>레프트타이틀</h1>
+			<ul>
+				<li><a href="#">왼쪽메뉴 리스트</a></li>
+				<li><a href="#">왼쪽메뉴 리스트</a></li>
+				<li><a href="#">왼쪽메뉴 리스트</a></li>
+				<li><a href="#">왼쪽메뉴 리스트</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="hgroup">
+				<h1>컨텐츠타이틀</h1>
+				<ol>
+					<li class="home">home</li>
+					<li>로케이션(홈 > 컨텐츠)</li>
+				</ol>
+			</div>
+			<div id="content">
+				content
+			</div>
+		</main>
+	</div>
+	<!-- //Container -->
+	<!-- footer -->
+	<footer id="footer">
+		<nav class="fnav">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">저작권정책</a></li>
+				<li><a href="#">홈페이지개선의견</a></li>
+				<li><a href="#">홈페이지이용안내</a></li>
+				<li><a href="#">링크허용</a></li>
+				<li><a href="#">찾아오시는길</a></li>
+				<li><a href="#">RSS</a></li>
+				<li><a href="#">원격지원센터</a></li>
+				<li><a href="#">뷰어다운</a></li>
+			</ul>
+		</nav>
+		<p class="flogo"><img src="images/flogo.png" alt=""></p>
+		<address>
+		<p >서울시 ~ 주소</p>
+		<em>Copyright &copy;</em>
+		</address>
+		<div class="mark">
+			<img src="images/mark.png" alt="">
+			<img src="images/qrcode.png" alt="">
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+]]></content>
+<tabTrigger>sublayout</tabTrigger>
+</snippet>

@@ -1,0 +1,129 @@
+[
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"action": "remove_tag"
+		},
+		"command": "run_emmet_action"
+	},
+	{
+		"args":
+		{
+			"action": "remove_tag"
+		},
+		"command": "run_emmet_action"
+	},
+	{
+		"args":
+		{
+			"action": "remove_tag"
+		},
+		"command": "run_emmet_action"
+	},
+	{
+		"args":
+		{
+			"extend": true,
+			"to": "eol"
+		},
+		"command": "move_to"
+	},
+	{
+		"args": null,
+		"command": "cut"
+	},
+	{
+		"args":
+		{
+			"characters": "h3"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "expand_abbreviation_by_tab"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	}
+]

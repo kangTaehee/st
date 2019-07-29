@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+<dl>
+	<dt>주소</dt>
+	<dd>
+		<div class="postSet">
+			<span>
+			<input type="text" name="" value="" class="post" title="우편번호">
+			<a href="#" class="b-sh" title="새창열림">주소 찾기</a>
+			</span>
+			<span><input type="text" name="" value="" class="w100p" title="주소"></span>
+			<span><input type="text" name="" value="" class="w100p" title="상세주소"></span>
+		</div>
+	</dd>
+</dl>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>post</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

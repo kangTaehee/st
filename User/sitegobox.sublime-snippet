@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="sitegobox">
+	${1:this}
+	<div class="link">
+		<a href="${1:this}" target="_blank" title="새창열림">
+			<span class="t">${1:this}</span>
+			<span class="t2">바로가기</span>
+		</a>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<div id="full" class="type-white">
+	<div class="head">
+		<button type="button" class="back" aria-label="뒤로"></button>
+		<h1 class="title">상품구매</h1>
+		<button type="button" class="parentClose" aria-label="닫기"><i class="ico ico-close"></i></button>
+	</div>
+	<div class="body">
+		
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

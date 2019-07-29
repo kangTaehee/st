@@ -1,0 +1,26 @@
+{
+	"access_token": "7e03640303ad08ec4737ee5b21ad2e7335462407",
+	"auto_upgrade": false,
+	"excluded_files":
+	[
+		".dmg",
+		".DS_Store",
+		".DS_Store?",
+		".exe",
+		".Spotlight-V100",
+		".Trashes",
+		"ehthumbs.db",
+		"oscrypto-ca-bundle.crt",
+		"SyncSettings.sublime-settings",
+		"Package Control.cache",
+		"Package Control.last-run",
+		"Package Control.merged-ca-bundle",
+		"Package Control.system-ca-bundle",
+		"Package Control.user-ca-bundle",
+		"Thumbs.db"
+	],
+	"gist_id": "https://gist.github.com/kangTaehee/5f9cd11cb835638701b18110e2c30f78",
+	"included_files":
+	[
+	]
+}

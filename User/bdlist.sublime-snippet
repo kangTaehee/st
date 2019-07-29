@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<div class="bdList">
+	<ul>
+		<li>
+			<sppan class="num">1</sppan> 
+			<div class="s">
+			<a href="">
+				<span class="tit normal">공원 내 과태료 납부 안내</span>
+			</a>
+			</div>
+			<span class="dept">공원녹지과</span>
+			<span class="date">2017-02-02</span>
+		</li>
+	</ul>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>d1</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

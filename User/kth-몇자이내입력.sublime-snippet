@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+<script>
+\$(function() {
+	\$('.characterLen').each(function(index, el) {
+		\$(this).keyup(function (e){
+			var selfintroduction = \$(this).val();
+			var str = \$(this).val();
+			var limit = \$(this).data().lensize;
+			\$(this).next().html(selfintroduction.length + '/'+limit+'자 이내 입력');
+			if(selfintroduction.length >= limit){
+				alert("글자수는 "+limit+"자를 초과할수 없습니다.");
+				\$(this).val(str.substring(0,limit))
+			}
+		})
+		.next().html(\$(this).data().lensize+'자 이내 입력')
+	});
+});
+</script>
+<textarea class="characterLen" data-lensize="1980" cols="100" rows="10"></textarea>
+<p class="characterLenDeco"></p>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>characterLen</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

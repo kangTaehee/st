@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/static/jslibrary/slick/slick.js"></script>
+<div class="photoset paging2">
+	<div class="area">
+		<img src="/static/portal/img/HKPU_02_02_03_pic1.jpg" alt="외주이벤트 공연 사진 1">
+		<img src="/static/portal/img/HKPU_02_02_03_pic2.jpg" alt="외주이벤트 공연 사진 2">
+		<img src="/static/portal/img/HKPU_02_02_03_pic3.jpg" alt="외주이벤트 공연 사진 3">
+		<img src="/static/portal/img/HKPU_02_02_03_pic4.jpg" alt="외주이벤트 공연 사진 4">
+	</div>
+</div>
+<script>
+	\$(function() {
+		var photoSetList = \$(".photoset .area").slick({
+			// autoplay: true,
+			autoplaySpeed:1000,
+			dots: true,
+			infinite: true,
+			// centerMode: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			accessibility: true,
+			pauseOnFocus: false
+			// draggable: false,
+			// focusOnSelect: true,
+		});
+	});
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

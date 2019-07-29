@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<button class="b-reg">등록</button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>breg</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

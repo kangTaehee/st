@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<div class="bdViewNav">
+	<dl>
+		<dt>이전글</dt>
+		<dd><a href=""> 창창한 대화-융합편 with 와디즈, 이연택 디자인연구소 </a></dd>
+	</dl>
+	<dl>
+		<dt>다음글</dt>
+		<dd><a href=""> 2016 아이디어 융합팩토리 6기 창작자 모집공고 </a></dd>
+	</dl>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bdviewnav</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

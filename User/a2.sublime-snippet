@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<div class="speaker" id="speaker">
+	<div class="pic">
+		<img src="/static/usr/img/intro/speakers_photo1_01.jpg" alt="" width="155" />
+	</div>
+	<div class="speaker_info">
+		<h3>${1:}</h3>
+		<ul class="speaker_in">
+			<li><strong class="fs14">${1:}</strong></li>
+			<li class="justify">${1:}</li>
+		</ul>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>a2</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

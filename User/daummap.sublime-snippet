@@ -1,0 +1,69 @@
+<snippet>
+	<content><![CDATA[
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=${1}&libraries=services"></script>
+<div id="map" style="width:100%;height:350px;"></div>
+<div id="roadview" style="width: 100%;height: 400px"></div>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = {
+        center: new daum.maps.LatLng(37.496982408306266,127.04100916915156), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };  
+
+// 지도를 생성합니다    
+var map = new daum.maps.Map(mapContainer, mapOption); 
+
+// 주소-좌표 변환 객체를 생성합니다
+var geocoder = new daum.maps.services.Geocoder();
+
+// 주소로 좌표를 검색합니다
+geocoder.addressSearch('서울 강남구 역삼로 221', function(result, status) {
+
+    // 정상적으로 검색이 완료됐으면 
+     if (status === daum.maps.services.Status.OK) {
+
+        var coords = new daum.maps.LatLng(result[0].y, result[0].x);
+        // 결과값으로 받은 위치를 마커로 표시합니다
+        var marker = new daum.maps.Marker({
+            map: map,
+            position: coords
+        });
+
+        // 인포윈도우로 장소에 대한 설명을 표시합니다
+        var infowindow = new daum.maps.InfoWindow({
+            content: '<div style="width:150px;text-align:center;padding:6px 0;">여성기업종합지원센터</div>'
+        });
+        infowindow.open(map, marker);
+
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        map.setCenter(coords);
+
+	// 로드뷰
+        var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
+        var roadview = new daum.maps.Roadview(roadviewContainer); //로드뷰 객체
+        var roadviewClient = new daum.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+		// var viewpoint = new daum.maps.Viewpoint(30, -10, 1);
+        var position = new daum.maps.LatLng(result[0].y, result[0].x);
+
+        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+        roadviewClient.getNearestPanoId(position, 50, function(panoId) {
+            roadview.setPanoId(panoId, position); //panoId와 중심좌표를 통해 로드뷰 실행
+            roadview.setViewpoint({
+                pan: 330,
+                tilt: -56,
+                zoom: -3
+                // pan Number : 가로 각도, 0부터 360 사이의 값으로 북쪽부터 시계방향으로 대응한다.
+                // tilt Number : 세로 각도, -90부터 90 사이의 값으로 위쪽부터 아래쪽으로 대응한다.
+                // zoom Number : 확대 수준, -3부터 3 사이의 정수이다.
+                // panoId Number : 특정 위치의 로드뷰 고유의 아이디 값
+            });
+        });
+    } 
+});    
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

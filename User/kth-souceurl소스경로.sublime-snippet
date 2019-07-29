@@ -1,0 +1,52 @@
+<snippet>
+	<content><![CDATA[
+<c:if test="\${serverName eq '127.0.0.1'}">
+	<script src="/static/jslibrary/zclip/jquery.zclip.js"></script>
+	<div class="souceUrl">*/WEB-INF/jsp\${empty includePage ? currMenu.contentsPath : includePage}</div>
+	<div class="check" style="display: none">복사완료</div>
+	<script type="text/javascript">
+		\$(document).ready(function(){
+		    \$(".souceUrl").zclip({
+			    path: "/js/zclip/ZeroClipboard.swf",
+		        copy:\$('.souceUrl').text(),
+		        beforeCopy:function(){
+		            \$('.souceUrl').css('background','yellow');
+		            \$(this).css('color','orange');
+		        },
+		        afterCopy:function(){
+		            \$('.souceUrl').css('background','green');
+		            \$(this).css('color','purple');
+		            \$(this).next('.check').show();
+		            \$(this).width('auto')
+		        }
+		    });
+		});
+	</script>
+	<div class="souceUrl2">WEB-INF/jsp\${empty includePage ? currMenu.contentsPath : includePage}</div>
+	<div class="check2" style="display: none">복사완료</div>
+	<script type="text/javascript">
+		\$(document).ready(function(){
+		    \$(".souceUrl2").zclip({
+			    path: "/js/zclip/ZeroClipboard.swf",
+		        copy:\$('.souceUrl2').text(),
+		        beforeCopy:function(){
+		            \$('.souceUrl2').css('background','yellow');
+		            \$(this).css('color','orange');
+		        },
+		        afterCopy:function(){
+		            \$('.souceUrl2').css('background','green');
+		            \$(this).css('color','purple');
+		            \$(this).next('.check2').show();
+		            \$(this).width('auto')
+		        }
+		    });
+		});
+	</script>
+	<div style="color:red">*/WEB-INF/jsp\${empty includePage ? currMenu.contentsPath : includePage}</div>
+</c:if>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>souceurl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

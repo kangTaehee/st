@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+<select name="" title="년도" >
+	<option value="" selected="selected"></option>
+	<option value=""></option>
+</select> 년
+<select name="" title="월" >
+	<option value="" selected="selected"></option>
+	<option value=""></option>
+</select> 월
+<select name="" title="일" >
+	<option value="" selected="selected">01</option>
+	<option value=""></option>
+</select> 일
+]]></content>
+<tabTrigger>datey</tabTrigger>
+</snippet>

@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+var browserName = undefined;
+var userAgent = navigator.userAgent;
+
+switch (true) {
+	case /Trident|MSIE/.test(userAgent):
+		browserName = 'ie';
+		break;
+
+	case /Edge/.test(userAgent):
+		browserName = 'edge';
+		break;
+
+	case /Chrome/.test(userAgent):
+		browserName = 'chrome';
+		break;
+
+	case /Safari/.test(userAgent):
+		browserName = 'safari';
+		break;
+
+	case /Firefox/.test(userAgent):
+		browserName = 'firefox';
+		break;
+
+	case /Opera/.test(userAgent):
+		browserName = 'opera';
+		break;
+
+	default:
+		browserName = 'unknown';
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>browserCheck</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

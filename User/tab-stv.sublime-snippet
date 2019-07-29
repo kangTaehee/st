@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div class="tab">
+  <div class="tab-list stv">
+    <div class="item on "><a href="#con1" title="선택됨"><span>${1:}</span> </a> </div>
+    div.item*${2:1}>a[href=#con\$]>span
+  </div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

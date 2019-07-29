@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="lpopwrap">
+	<div class="set">
+		<h1>${1:자격증 등록하기}</h1>
+		<button type="button" class="lpopwrapClose"><i class="ico ico-close"></i><span class="sr-only">닫기</span></button>
+		<div class="lpopbody">
+			${2:레이어팝업내용}
+		</div>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lpop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

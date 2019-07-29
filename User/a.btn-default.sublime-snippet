@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<a href="" class="btn btn-default">${1:등록}${2:수정}${3:목록}${4:취소}</a>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>btndefault</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

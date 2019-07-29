@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\$('.infomation button').click(function(event) {
+	var _url = \$(this).prev('select')[0].value;
+	if (_url != '') {
+		console.log(_url.indexOf('http'))
+		if (_url.indexOf('http')==0) {
+			var openNewWindow = window.open("about:blank");
+			openNewWindow.location.href = _url;
+		}else{
+			location.href = _url;
+		}
+	}
+	event.preventDefault();
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>selectgo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,52 @@
+<snippet>
+	<content><![CDATA[
+<div class="view">
+	<h2 class="subject">${1:게시물제목}</h2>
+	<dl>
+		<dt>작성자</dt>
+		<dd>홍길동</dd>
+		<dt>등록일</dt>
+		<dd>2016-01-01</dd>
+		<dt>조회수</dt>
+		<dd>689</dd>
+	</dl>
+	<dl>
+		<dt>첨부파일</dt>
+		<dd>등록된 첨부파일이 없습니다.</dd>
+	</dl>
+	<dl>
+		<dt>첨부파일</dt>
+		<dd>
+
+			<ul class="fileList">
+				<li><a href="">파일이름.pdf</a></li>
+				<li><a href="">파일이름파일이름파일이름파일이름파일이름파일이름파일이름파일이름파일이름파일이름파일이름파일이름 파일 이 름 .pdf</a></li>
+			</ul>
+		</dd>
+	</dl>
+	<div class="dbData">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</div>
+<div class="bdViewNav">
+	<dl>
+		<dt>이전글</dt>
+		<dd><a href=""> 이전게시물 제목 </a></dd>
+	</dl>
+	<dl>
+		<dt>다음글</dt>
+		<dd><a href=""> 다음게시물 제목 </a></dd>
+	</dl>
+</div>
+<div class="btnSet">
+	<a href="" class="b-reg">답글</a>
+	<a href="" class="b-edit">수정</a>
+	<a href="" class="b-del">삭제</a>
+	<a href="" class="b-list">목록</a>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>noticeA-view</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

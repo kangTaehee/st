@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+<style>
+[class^=sns-]{display:inline-block;width:20px;height:20px;background-color:red;}
+.sns-facebook   {}
+.sns-tweeter    {}
+.sns-kakaostory {}
+.sns-kakaotalk  {}
+.sns-band       {}
+.sns-google     {}
+</style>
+<div class="snsWrap">
+	<a class="sns-facebook"><span class="hidden">페이스북 공유</span></a>
+	<a class="sns-tweeter"><span class="hidden">트위터 공유</span></a>
+	<a class="sns-kakaostory"><span class="hidden">카카오스토리 공유</span></a>
+	<a class="sns-kakaotalk"><span class="hidden">카카오톡 공유</span></a>
+	<a class="sns-band"><span class="hidden">네이버 밴드 공유</span></a>
+	<a class="sns-google"><span class="hidden">구글+ 공유</span></a>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sns</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

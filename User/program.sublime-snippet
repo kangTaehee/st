@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+.imgleft>h2+(.img>img[src=/static/portal/img/sub/noimg.png])+p
+<div class="btnSet c">
+	<a href="" target="_blank" title="새창열림" class="b-sitego">온라인 수강 신청하기</a>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

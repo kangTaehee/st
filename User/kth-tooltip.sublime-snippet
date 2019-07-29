@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$('.tooltip').each(function(index, el) {
+	\$(this).append('<span class="tooltip"></span>').attr('tabindex','0')
+	\$(this).bind('mouseenter focusin', function(event) {
+		// alert(\$(this).text())
+		\$(this).find('.tooltip').css('display','block');
+	});
+	\$(this).bind('mouseleave focusout', function(event) {
+		// alert(\$(this).text())
+		\$(this).find('.tooltip').hide()
+	});
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tooltip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.script</scope> -->
+</snippet>

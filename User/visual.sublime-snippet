@@ -1,0 +1,65 @@
+<snippet>
+	<content><![CDATA[
+<div id="visual">
+	<div class="ctrl">
+		<div class="set">
+			<button type="button" class="${1:mainvisual}-prev"><span class="sr-only">이전 ${2:비주얼}</span></button>
+			<button type="button" class="${1:mainvisual}-pause"><span class="sr-only">정지 ${2:비주얼}</span></button>
+			<button type="button" class="${1:mainvisual}-play"><span class="sr-only">재생 ${2:비주얼}</span></button>
+			<button type="button" class="${1:mainvisual}-next"><span class="sr-only">다음 ${2:비주얼}</span></button>
+		</div>
+	</div>
+	<div class="${1:mainvisual}-area owl-carousel">
+		<div class="item" style="background-image:url('${3:}')">
+			<div class="sr-only">${4:}</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	/* 메인 비쥬얼 */
+	var visualSlide = \$('.${1:mainvisual}-area');
+	visualSlide.owlCarousel({
+		items: 1,
+		center: true,
+		responsive:{
+		        1140:{
+		            items:3,
+		            autoWidth:true
+		        }
+		    },
+		loop: true,
+		nav: false,
+		dots: false,
+		smartSpeed:1300,
+		// navContainerClass: 'customNav',
+		// autoHeight:true, // autoHeightClass: 'owl-height'
+		responsiveRefreshRate: 0,
+		autoplay: true,
+		autoplayTimeout:5000,
+		autoplayHoverPause: true
+	});
+	\$('.${1:mainvisual}-pause').on('click', function(e) {
+		\$(this).toggleClass('${1:mainvisual}-play');
+		if( \$( this ).is(".${1:mainvisual}-play" ) ) {
+			visualSlide.trigger('play.owl.autoplay',[3000]);
+			\$(this).children('.sr-only').html('정지 비주얼');
+		} else {
+			visualSlide.trigger('stop.owl.autoplay');
+			\$(this).children('.sr-only').html('재생 비주얼');
+		}
+		e.preventDefault();
+	});
+	\$('.${1:mainvisual}-prev').click(function(event) {
+		visualSlide.trigger('prev.owl.carousel');
+	});
+	\$('.${1:mainvisual}-next').click(function(event) {
+		visualSlide.trigger('next.owl.carousel');
+	});
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

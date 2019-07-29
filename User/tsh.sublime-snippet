@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+<div class="tsh">
+	<input type="text" title="검색어" class="keyword">
+	<input type="image" src="${1:/static/img/story/common/tshBtn.png}" alt="검색" class="imgSubmit">
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tsh</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.css</scope> -->
+</snippet>

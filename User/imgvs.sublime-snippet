@@ -1,0 +1,33 @@
+<snippet>
+  <content><![CDATA[
+<script>
+  function imgvs(selecter) {
+    \$(selecter).each(function(index, el) {
+      \$(this).one("load", function() {
+        //  58.65979381443299
+        if (75 > (\$(this)[0].naturalHeight / \$(this)[0].naturalWidth)*100) {
+          //세로가 더 작을때
+          \$(this).addClass('height100p')
+        }else{
+          //가로가 작을때
+          \$(this).addClass('width100p')
+        }
+      }).each(function() {
+        if(this.complete) \$(this).load();
+      });
+    });
+  }
+</script>
+<style>
+.img4vs3{position: relative;}
+.img4vs3:after{content: '';display: block;padding-top: 75%;}
+.img4vs3 img{position: absolute;top: 0;left: 0;right: 0;margin:auto;width:auto;height: 100%;max-width:inherit;bottom: 0;}
+.img4vs3 img.height100p{height:auto;width: 100%;}
+.img4vs3 img.width100p{width:auto;height:100%;}
+</style>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

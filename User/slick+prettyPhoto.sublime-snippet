@@ -1,0 +1,127 @@
+<snippet>
+  <content><![CDATA[
+<div class="photoView">
+  <h2>\${result.nttSj }</h2>
+  <div class="row-fluid">
+    <div class="col-md-6">
+        <div class="photoviewSlick">
+            <div>
+              <a href="\${file.imgUrl}" rel="prettyPhoto[photo1]" title="\${result.nttSj }">
+              <div class="img4vs3">
+              <img src="\${file.imgUrl}" alt="\${empty file.fileCn ? file.orignlFileNm : file.fileCn}">
+              </div>
+              </a>
+            </div>
+        </div>
+        <!-- //첨부된 이미지 없을 경우 <span class="nodataImg"><span class="sr-only">첨부된 이미지가 없습니다.</span></span> -->
+        <div class="btnSet c">
+            <a href="javascript:void(0)" class="b-photo btnOriginal">원화보기</a>
+            <a href="/portal/cmmn/file/fileDown.do?atchFileId=\${result.atchFileId}&fileSn=1&bbsId=\${param.bbsId}"  class="b-down btnDownload">다운로드</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+</div>
+<div class="photoViewList">
+  <div class="ctrl">
+      <button class="prevphotosm btn" type="button"><i class="fa fa-chevron-left"></i><span class="hidden">이전 이미지 보기</span></button>
+      <button class="nextphotosm btn" type="button"><i class="fa fa-chevron-right"></i><span class="hidden">다음 이미지 보기</span></button>
+      <!-- <button class="stopphotosm btn"><i class="fa fa-stop"></i><span class="hidden">이미지 연속보기 정지</span></button> -->
+      <!-- <button class="playphotosm btn"><i class="fa fa-play"></i><span class="hidden">이미지 연속보기 시작</span></button> -->
+  </div>
+  <div class="photoViewThumbs">
+    <div>
+      <a href="javascript:void(0);">
+      <div class="img4vs3">
+      <img src="\${file.thumbImgUrl}" alt="\${result.nttSj } 크게 보기\${status.count}">
+      </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="btnSet">
+    <a href="\${url}" class="b-list">목록</a>
+</div>
+<link rel="stylesheet" href="/static/jslibrary/prettyPhoto/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script type="text/javascript" src="/static/jslibrary/prettyPhoto/jquery.prettyPhoto.js"></script>
+<script>
+  \$(".btnOriginal").bind("click", function(){
+    \$('.photoviewSlick .slick-active a').trigger('click');
+  })
+  \$(".photoviewSlick a[rel^='prettyPhoto']").prettyPhoto({
+    animation_speed:'fast',
+    slideshow:10000,
+    hideflash: true,
+    social_tools:"",
+    callback:function(argument){
+      \$(".btnOriginal").focus();
+    }
+  });
+  \$('.photoviewSlick img').each(function(index, el) {
+    \$(this).one("load", function() {
+      //  58.65979381443299
+      if (75 > (\$(this)[0].naturalHeight / \$(this)[0].naturalWidth)*100) {
+        //세로가 더 작을때
+        \$(this).addClass('height100p')
+      }else{
+        //가로가 작을때
+        \$(this).addClass('width100p')
+      }
+    }).each(function() {
+      if(this.complete) \$(this).load();
+    });
+  });
+  \$(function(){
+    var promotionLightSlider = \$(".photoviewSlick").slick({
+      autoplay: false,
+      autoplaySpeed:3000,
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:false,
+      asNavFor: '.photoViewThumbs'
+    });
+    var photoViewThumbs = \$(".photoViewThumbs").slick({
+      autoplay: false,
+      autoplaySpeed:3000,
+      dots: false,
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows:true,
+      prevArrow:'.prevphotosm',
+      nextArrow:'.nextphotosm',
+      asNavFor: '.photoviewSlick',
+      focusOnSelect:true,
+      responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+  });// \$redy
+</script>
+<style>
+/* 이미지 비율 체크 가운데 정렬 */
+.img4vs3{position: relative;}
+.img4vs3:after{content: '';display: block;padding-top: 75%;width: 100%;}
+.img4vs3 img{display: block;position: absolute;top: 0;left: 0;right: 0;margin:auto;width:auto;height: 100%;max-width:inherit;bottom: 0;}
+.img4vs3 img.height100p{height:auto;width: 100%;}
+.img4vs3 img.width100p{width:auto;height:100%;}
+
+.photoViewThumbs a{display: block; text-align: center; padding: 2px; /* outline: 1px red; */ }
+.photoViewThumbs a img{}
+.photoViewThumbs .img4vs3 a img{width: 100%;height: 100%;}
+</style>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

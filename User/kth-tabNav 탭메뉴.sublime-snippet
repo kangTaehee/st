@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+<style>
+.tabnavi{margin-bottom:20px;}
+.tabnavi ul{position:relative;}
+.tabnavi ul:before{content: '';width:100%;height:2px;position:absolute;bottom:0;left:0;z-index:1;background-color:#c129a3;}
+.tabnavi ul:after{content: '';clear:both;display:block;height:0;}
+.tabnavi ul li{float:left;}
+.tabnavi ul li a{display:block;font-size:14px;padding:0 28px;height:45px;line-height:45px;border:1px solid #ededed;background-color:#fff;border-left:none;}
+.tabnavi ul li.active a{color:#c129a3;font-weight:bold;border:2px solid #c129a3;border-bottom:none;position:relative;z-index:2;background-color:#ededed;}
+</style>
+<div class="tabnavi">
+	<nav>
+		<ul>
+			<li class="active"><a href="">통합검색(25) <span class="sr-only">(현재검색)</span></a></li>
+			<li><a href="">작품검색</a></li>
+			<li><a href="">창작/제작지원</a></li>
+			<li><a href="">웹페이지</a></li>
+			<li><a href="">게시물</a></li>
+			<li><a href="">메뉴</a></li>
+			<li><a href="">첨부파일</a></li>
+		</ul>
+	</nav>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

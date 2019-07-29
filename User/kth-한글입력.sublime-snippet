@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// 한글입력
+\$(':text,textarea').each(function(index, el) {
+	\$(this).css('ime-mode','active')
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>imemode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.script</scope> -->
+</snippet>

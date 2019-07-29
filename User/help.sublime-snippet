@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<button type="button" aria-label="도움말"><i class="ico ico-help"></i></button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>help</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

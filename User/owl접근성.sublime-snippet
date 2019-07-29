@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+<script>
+	var keyboardchk = false;
+	\$('body').on('keydown', function(event) {
+		if (event.keyCode==9) {
+			keyboardchk=true;
+		}
+	});
+	\$('body').on('click', function(event) {
+		keyboardchk=false;
+		\$('.keyboardControlActive').removeClass('keyboardControlActive')
+	});
+	\$('.owl-prev,.owl-next').each(function(index, el) {
+		\$(this).attr('tabindex', '0');
+		\$(this).bind('click keydown', function(event) {
+			if (event.keyCode==13 || event.type == 'click'){
+				\$('.owl-stage').removeClass('keyboardControlActive');
+				\$('.owl-stage-outer').scrollLeft(0);
+				event.preventDefault();
+			}
+		});
+	});
+	\$('.item a').on('focus', function(event) {
+		if (keyboardchk) {
+			\$(this).parents('.owl-stage').addClass('keyboardControlActive');
+			\$(this).parents('.owl-carousel').trigger('stop.owl.autoplay');
+		}
+	});
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>owl keyboard Accet</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

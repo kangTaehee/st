@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE${1:7}" />
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ie7</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

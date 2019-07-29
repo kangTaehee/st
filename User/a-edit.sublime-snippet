@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<a href="" class="b-edit">수정</a>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aedit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

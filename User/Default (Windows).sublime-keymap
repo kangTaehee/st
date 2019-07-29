@@ -1,0 +1,81 @@
+[
+   // { "keys"    : ["ctrl+b"], "command": "open_in_browser" },
+    // { "keys" : [ "ctrl+b" ], "command": "view_in_browser", "args": { "browser": "chrome" } },
+    { "keys"    : ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
+    { "keys"    : ["ctrl+i"], "command": "run_macro_file", "args": {"file": "Packages/User/html-img.sublime-macro"} },
+//  { "keys"    : ["ctrl+1"], "command": "run_macro_file", "args": {"file": "Packages/User/jspCout.sublime-macro"} },
+    { "keys"    : ["alt+keypad1"], "command": "run_macro_file", "args": {"file": "Packages/User/h2bu1.sublime-macro"} },
+    { "keys"    : ["alt+keypad2"], "command": "run_macro_file", "args": {"file": "Packages/User/html-parentLiAppend.sublime-macro"} },
+    { "keys"    : ["alt+keypad3"], "command": "autoprefixer" },
+    { "keys"    : ["alt+keypad4"], "command": "run_macro_file", "args": {"file": "Packages/User/a1.sublime-macro"} },
+    { "keys"    : ["alt+keypad5"], "command": "run_macro_file", "args": {"file": "Packages/User/tour.sublime-macro"} },
+    { "keys"    : ["alt+keypad6"], "command": "run_macro_file", "args": {"file": "Packages/User/pagedeco.sublime-macro"} },
+    { "keys"    : ["alt+keypad7"], "command": "run_macro_file", "args": {"file": "Packages/User/pagedecoLine.sublime-macro"} },
+    { "keys"    : ["f2"], "command": "run_macro_file", "args": {"file": "Packages/User/h3.sublime-macro"} },
+    { "keys"    : ["f1"], "command": "run_macro_file", "args": {"file": "Packages/User/fontplace.sublime-macro"} },
+    { "keys"    : ["ctrl+t","ctrl+h"], "command": "run_macro_file", "args": {"file": "Packages/User/thcol.sublime-macro"} },
+    { "keys"    : ["ctrl+t","ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/User/td.sublime-macro"} },
+    { "keys"    : ["f6"], "command": "focus_file_on_sidebar" },
+    { "keys"    : ["ctrl+alt+q"], "command": "insert_snippet", "args": { "name": "Packages/st3-jstl-snippet-autocomplete-master/jstl-comment.sublime-snippet" } },
+    { "keys"    : ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+    { "keys"    : ["ctrl+shift+a"], "command": "expand_selection", "args": {"to": "tag"} },
+    { "keys"    : ["shift+ctrl+f2"], "args"      : {"action"    : "reflect_css_value"}, "command"   : "run_emmet_action", "context"   : [{"key": "emmet_action_enabled.reflect_css_value"} ] },
+    { "keys"    : ["ctrl+alt+a"], "command": "align_tab" , "args" : {"live_preview" : true}},
+    { "keys"    : ["ctrl+alt+."], "command": "align_tab" , "args" : {"user_input" : "=/l0f"}},
+    { "keys"    : ["ctrl+alt+["], "command": "align_tab" , "args" : {"user_input" : "{/l0f"}},
+    { "keys"    : ["f5"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}},
+    { "keys"    : ["f7"], "command": "sftp_upload_file" },
+    { "keys": ["ctrl+alt+w"], "command": "close_all" },
+    // { "keys": ["f8"], "command": "subprocess_in_cwd", "args": {"cmd": ["C:\\ConEmuPack.170517\\ConEmu64.exe","gulp"] } },
+    { "keys": ["f8"], "command": "subprocess_in_cwd", "args": {"cmd": "cmd.exe" } },
+    {"keys": ["ctrl+shift+x"], "command": "shell_prompt"}
+    // { "keys": ["ctrl+alt+a"], "command": "alignment" }//alignment
+    ,{ "keys": ["ctrl+b"],
+        "command": "side_bar_open_in_browser" ,
+        "args":{"paths":[], "type":"testing", "browser":"default"}    // 크롬 브라우저로 미리보기 설정
+    },
+    {"keys": ["f11"], "command": "goto_css_declaration", "args": {"goto": "next"} },
+    {"keys": ["super+alt+,"],  "command": "goto_css_declaration", "args": {"goto": "prev"} },
+    { "keys": ["f1"], "command": "join_lines" },
+    {"keys": ["alt+up"], "command": "run_multiple_commands",
+        "args": {
+            "commands":
+            [
+                { "command": "move", "args": {"by": "lines", "forward": false} },
+                { "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+                { "command": "move", "args": {"by": "lines", "forward": true} },
+                { "command": "move_to", "args": {"to": "bol", "extend": false} }
+            ],
+        }
+    },
+    {"keys": ["alt+down"], "command": "run_multiple_commands",
+        "args": {
+            "commands":
+            [
+                { "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
+                { "command": "move", "args": {"by": "lines", "forward": true} },
+                { "command": "move_to", "args": {"to": "bol", "extend": false} }
+            ],
+        }
+    },
+    // {"keys": ["alt+shift+up"], "command": "run_multiple_commands",
+    //     "args": {
+    //         "commands":
+    //         [
+    //             { "command": "move", "args": {"extend": true, "by": "lines", "forward": false} },
+    //             { "command": "move", "args": {"extend": true, "by": "stops", "empty_line": true, "forward": false} },
+    //             { "command": "move", "args": {"extend": true, "by": "lines", "forward": true} },
+    //         ],
+    //     }
+    // },
+    // {"keys": ["alt+shift+down"], "command": "run_multiple_commands",
+    //     "args": {
+    //         "commands":
+    //         [
+    //             { "command": "move", "args": {"extend": true, "by": "stops", "empty_line": true, "forward": true} },
+    //             { "command": "move", "args": {"extend": true, "by": "lines", "forward": true} },
+    //         ],
+    //     }
+    // },
+    { "keys": ["ctrl+shift+c"], "command": "color_pick" }
+]

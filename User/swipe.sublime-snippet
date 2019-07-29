@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+\$(function() {
+	\$(".dentalInfo").swipe({
+		excludedElements: "button, input, select, textarea, .noSwipe",
+		swipeLeft: function() {
+	\$('.DEleft').trigger('click')
+			return false;
+		},
+		swipeRight: function() {
+	\$('.DEright').trigger('click')
+			return false;
+		},
+		tap: function(event, target) {
+			\$(target).parent().trigger('click');
+			if (\$(target).attr('href')!=undefined) {
+				if (\$(target).attr('target')=='_blank') {
+					window.open(\$(target).attr('href'))
+				}else{
+					document.location.href = \$(target).attr('href')
+				};
+			};
+		}
+	});
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>js-swipe</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.css</scope> -->
+</snippet>

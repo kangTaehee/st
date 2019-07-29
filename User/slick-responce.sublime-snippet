@@ -1,0 +1,95 @@
+<snippet>
+	<content><![CDATA[
+<div class="mainvisualTop">
+		<div class="mainTopService">
+				<!-- F -->
+				<div class="slide">
+					<i></i>
+					<a href="" class="hovershow">
+						<img src="" alt="">
+					</a>
+					<div class="hovercon">
+						<a href="">마우스 오버 활성화 영역</a>
+					</div>
+				</div>
+			<!-- F -->
+		</div>
+</div>
+<div class="visualpaging">
+		<ul class="slick-dots" style="display: inline-block;">
+		<li class="slick-active"><button data-s="0" type="button">공연정보 1 보기</button></li>
+		<li ><button data-s="1" type="button">공연정보 2 보기</button></li>
+		<li ><button data-s="2" type="button">공연정보 3 보기</button></li>
+		<li ><button data-s="3" type="button">공연정보 4 보기</button></li>
+		</ul>
+	<button type="button" class="visualstop"><i class="btn-stop"></i><span class="sr-only">공연정보 정지</span></button>
+</div>
+<script src="/static/jslibrary/slick/slick.js"></script>
+<script>
+	\$(function() {
+		var mainvisual = \$(".mainTopService").slick({
+		  // autoplay: true,
+		  autoplaySpeed:1000,
+		  // dots: true,
+		  infinite: true,
+		  // centerMode: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  accessibility: false,
+		  pauseOnFocus: false,
+		  // draggable: false,
+		  // focusOnSelect: true,
+		  responsive: [
+		      {
+		        breakpoint: 767,
+		        settings: {
+		          slidesToShow: 1,
+		          slidesToScroll: 1
+		        }
+		      }
+		      // You can unslick at a given breakpoint now by adding:
+		      // settings: "unslick"
+		      // instead of a settings object
+		    ]
+		});
+		// \$('#mainvisual .slick-dots').after(\$('.visualstop'));
+		\$('.visualstop').click(function(event) {
+			mainvisual.slick('slickPause');
+		});
+		\$('.visualpaging li button').each(function(index, el) {
+			\$(this).click(function(event) {
+				mainvisual.slick('slickGoTo',parseInt(\$(this).data().s));
+				\$(this).parent().addClass('slick-active').siblings().removeClass('slick-active')
+			});
+		});
+		mainvisual.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		  // console.log(nextSlide);
+		  \$('.visualpaging li').eq(nextSlide).addClass('slick-active').siblings().removeClass('slick-active')
+		});
+		\$('#mainvisual').on('mouseenter focusin click', '.hovershow', function(event) {
+			event.preventDefault();
+			if (\$(window).width()>1023) {
+				\$(this).parent().addClass('hoverActive').siblings().removeClass('hoverActive')
+			}else{
+				// window.location.href = \$(this).attr('href');
+			}
+		});
+		\$('#mainvisual').on('click', '.hovershow', function(event) {
+			event.preventDefault();
+			if (\$(window).width()>1023) {
+				// \$(this).parent().addClass('hoverActive').siblings().removeClass('hoverActive')
+			}else{
+				window.location.href = \$(this).attr('href');
+			}
+		});
+		\$('#mainvisual').on('mouseleave', '.hovercon', function(event) {
+			\$(this).parent().removeClass('hoverActive').siblings().removeClass('hoverActive')
+		});
+	});
+</script>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+<div class="aggSet">
+	<h2>개인정보 수집ㆍ이용 동의</h2>
+	<label><input type="checkbox" name=""><i></i>동의</label>
+	<div class="agg">
+		<p>국민체육진흥공단은 개인정보보호법, 정보통신망 이용 촉진 및 정보보호 등에 관한 법률 등 관련 법령상의 개인정보보호 규정을 준수하며, 지원자들의 개인정보보호에 최선을 다하고 있습니다.</p>
+		<p>공단은 법령의 규정과 정보주체의 동의에 의해서만 개인정보를 수집·보유합니다. 공단은 다음의 목적을 위하여 개인정보를 처리합니다.</p>
+		<p>처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경될 경우에는 사전 동의를 구하겠습니다.</p>
+		<p>1. 개인정보의 수집 및 이용 목적 : 민원처리</p>
+		   <p>※ 본인인증정보의 경우 개인 식별용으로만 활용</p>
+		<p>2. 개인정보를 제공받는 기관 : 국민체육진흥공단</p>
+		<p>3. 개인정보의 보유 및 이용기간 : 3년</p>
+		<p>4. 수집항목</p>
+		<div class="table bd">
+			<table>
+				<caption>수집항목 정보</caption>
+				<thead>
+					<tr>
+						<th scope="col">신청구분</th>
+						<th scope="col">개인정보 수집항목</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>필수</td>
+					<td>{$1:성명, e-mail, 주소, 원도급업체명, 원도급업체 대표자명, 하도급위반업체명, 하도급위반업체 대표자명}</td>
+					</tr>
+					<tr>
+					<td>선택</td>
+					<td>핸드폰번호</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>※ 개인정보 제공에 동의를 거부하실 수 있으며, 거부 시 민원 접수가 되지 않습니다.</p>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aggr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

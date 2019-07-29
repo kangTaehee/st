@@ -1,0 +1,13 @@
+[
+	 {
+		"caption": "Remove: All Comments",
+		"command": "reg_replace",
+		"args": {
+			"replacements": [
+				"deleteSpace"
+			],
+			"find_only": true,
+			"regex_full_file_with_selections": true
+		}
+	},
+]

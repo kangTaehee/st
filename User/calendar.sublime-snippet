@@ -1,0 +1,66 @@
+<snippet>
+<content><![CDATA[
+table[summary='한달간의 목록']>(tr>(th.sun[scope=col]{일요일})+(th[scope=col]{월요일})(th[scope=col]{화요일})(th[scope=col]{수요일})(th[scope=col]{목요일})(th[scope=col]{금요일})(th.sat[scope=col]{토요일}))+(tr*6>(td.sun>a{\$})+(td*5>a{\$@2})+(td.sat>a{7}))
+<table summary="한달간의 목록">
+	<caption>달력</caption>
+	<tr>
+		<th class="sun" scope="col">일요일</th>
+		<th scope="col">월요일</th>
+		<th scope="col">화요일</th>
+		<th scope="col">수요일</th>
+		<th scope="col">목요일</th>
+		<th scope="col">금요일</th>
+		<th class="sat" scope="col">토요일</th>
+	</tr>
+	<tr>
+		<td class="sun"><a href="">1</a></td>
+		<td><a href="">2</a></td>
+		<td><a href="">3</a></td>
+		<td><a href="">4</a></td>
+		<td><a href="">5</a></td>
+		<td><a href="">6</a></td>
+		<td class="sat"><a href="">7</a></td>
+	</tr>
+	<tr>
+		<td class="sun"><a href="">8</a></td>
+		<td><a href="">9</a></td>
+		<td><a href="">10</a></td>
+		<td><a href="">11</a></td>
+		<td><a href="">12</a></td>
+		<td><a href="">13</a></td>
+		<td class="sat"><a href="">14</a></td>
+	</tr>
+	<tr>
+		<td class="sun"><a href="">15</a></td>
+		<td><a href="">16</a></td>
+		<td><a href="">17</a></td>
+		<td><a href="">18</a></td>
+		<td><a href="">19</a></td>
+		<td><a href="">20</a></td>
+		<td class="sat"><a href="">21</a></td>
+	</tr>
+	<tr>
+		<td class="sun"><a href="">22</a></td>
+		<td><a href="">23</a></td>
+		<td><a href="">24</a></td>
+		<td><a href="">25</a></td>
+		<td><a href="">26</a></td>
+		<td><a href="">27</a></td>
+		<td class="sat"><a href="">28</a></td>
+	</tr>
+	<tr>
+		<td class="sun"><a href="">29</a></td>
+		<td><a href="">30</a></td>
+		<td><a href="">31</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="sat">&nbsp;</td>
+	</tr>
+</table>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>calendar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.css</scope> -->
+</snippet>

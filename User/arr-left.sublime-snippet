@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+width:0;
+height:0;
+border-top:${1:5}px solid transparent;
+border-bottom:${1:5}px solid transparent;
+border-right:${1:5}px solid #${2:000};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>arrleft</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

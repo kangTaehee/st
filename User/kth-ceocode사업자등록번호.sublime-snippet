@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+<input type="text" class="companyCode1" title="사업자등록번호 처음 구분"/> -
+<input type="text" class="companyCode2" title="사업자등록번호 중간 구분"/> -
+<input type="text" class="companyCode3" title="사업자등록번호 끝 구분"/>
+<button type="button" class="b-ok companyCodeChk">중복확인</button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ceocode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

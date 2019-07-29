@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<th scope="col">${1}</th>
+]]></content>
+<tabTrigger>thc</tabTrigger>
+</snippet>

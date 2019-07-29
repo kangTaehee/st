@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+function getNumber(fCss, vali_str){
+	var temp = trim(fCss.substr(fCss.indexOf(vali_str), fCss.length));
+	if (temp.indexOf(" ")>-1){temp = temp.substr(0,temp.indexOf(" "));}
+	if (temp.indexOf("-")>-1){
+		var arr = temp.split("-");
+		temp = arr[1];
+	} else {temp=0;}
+	try{temp=parseInt(temp);} catch (e){temp=0;}
+	return temp;
+}
+// 앞/뒤에서 White Space가 제거된 값반환
+function trim(value) {
+	return value.replace(/^\s+|\s+\$/g,"");
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

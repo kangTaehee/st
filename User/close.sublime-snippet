@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<button type="button" class="parentClose" aria-label="닫기"><i class="ico ico-close"></i></button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>close</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
