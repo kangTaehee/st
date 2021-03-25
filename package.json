@@ -32,13 +32,13 @@
     "gulp-cache": "^1.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-image-resize": "^0.13.0",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^5.0.0",
     "gulp-remove-content": "^1.0.1",
     "gulp-remove-empty-lines": "^0.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sitemap-files": "^1.0.2",
     "gulp.spritesmith": "^6.9.0",
     "merge": "^1.2.0",
-    "npm": "^6.4.0"
+    "npm": "^7.0.0"
   }
 }
